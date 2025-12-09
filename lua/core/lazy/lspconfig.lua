@@ -143,13 +143,15 @@ return {
             'stylua', -- Used to format Lua code
         })
 
-        vim.lsp.start {
-            name = 'Godot',
-            cmd = vim.lsp.rpc.connect('127.0.0.1', 6005),
-            filetypes = { 'gd', 'gdscript', 'gdscript3' },
-            root_marker = { 'project.godot', '.git' },
-        }
-
+        -- For connecting to the godot engine lsp port. As long as Im using wsl will not work without
+        -- creating a service to rename all the windows connections to linux connections
+        -- vim.lsp.start {
+        --     name = 'Godot',
+        --     cmd = vim.lsp.rpc.connect('127.0.0.1', 6005),
+        --     filetypes = { 'gd', 'gdscript', 'gdscript3' },
+        --     root_marker = { 'project.godot', '.git' },
+        -- }
+        --
         require('mason-tool-installer').setup { ensure_installed = ensure_installed }
         require('mason-lspconfig').setup {
             ensure_installed = {}, -- explicitly set to an empty table (Kickstart populates installs via mason-tool-installer)
