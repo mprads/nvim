@@ -44,10 +44,11 @@ return { -- Useful plugin to show you pending keybinds.
 
         -- Document existing key chains
         spec = {
-            { '<leader>s', group = '[S]earch' },
+            { '<leader>s', group = '[S]earch with Telescope' },
             { '<leader>t', group = '[T]oggle' },
-            { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
             { '<leader>g', group = '[G]itsign' },
+            { '<leader>c', group = '[C] Trouble Toggles' },
+            { '<leader>x', group = '[X] Trouble Quickfix' },
         },
     },
 }
