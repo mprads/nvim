@@ -1,4 +1,4 @@
-REQS
+## REQS
 
 --Telescope
 
@@ -9,15 +9,16 @@ REQS
 
     sudo apt intall gcc
 
-BROKEN
+## BROKEN
 
 -Blink.cmp signatures with function arguments
 
-TODO
+## TODO
 
+- Figure out a way to expose <C-/> to add remap to comment out a line
 
-FIXES
+## FIXES
 
 -- Fixes issues where lua_ls needs 2.38 but others need a newer version
-  
+
     sudo ln -s /usr/lib/x86_64-linux-gnu/libbfd-2.42-system.so /usr/lib/x86_64-linux-gnu/libbfd-2.38-system.so

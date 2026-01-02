@@ -36,3 +36,5 @@ vim.keymap.set('v', '>', '>gv')
 -- Jump to previous or next buffer
 vim.keymap.set('n', '<S-h>', '<cmd>bprevious<CR>', { desc = 'Previous buffer' })
 vim.keymap.set('n', '<S-l>', '<cmd>bnext<CR>', { desc = 'Next buffer' })
+
+vim.keymap.set({ 'n', 'x' }, '<leader>p', [["_dP]], { desc = 'Paste without yank' })
