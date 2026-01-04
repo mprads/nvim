@@ -50,6 +50,7 @@ return { -- Useful plugin to show you pending keybinds.
             { '<leader>c', group = '[C] Trouble Toggles' },
             { '<leader>x', group = '[X] Trouble Quickfix' },
             { '<leader>r', group = '[R]ename' },
+            { 'gr', group = 'LSP Global Actions' },
         },
     },
 }
