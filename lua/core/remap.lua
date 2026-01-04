@@ -38,3 +38,5 @@ vim.keymap.set('n', '<S-h>', '<cmd>bprevious<CR>', { desc = 'Previous buffer' })
 vim.keymap.set('n', '<S-l>', '<cmd>bnext<CR>', { desc = 'Next buffer' })
 
 vim.keymap.set({ 'n', 'x' }, '<leader>p', [["_dP]], { desc = 'Paste without yank' })
+
+vim.keymap.set('n', '<leader>rw', [[:%s/\<<C-r><C-w>\>//g<Left><Left>]], { desc = '[R]ename [W]ord in current buffer' })
